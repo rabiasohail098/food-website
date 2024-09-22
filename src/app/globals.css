@@ -2,32 +2,288 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+
+*{
+  margin: 0;
+  padding: 0;
+}
+#bs-search{
+  position: absolute;
+  margin-left: 70%;
+  margin-top: 15px;
+}
+body{
+  background-color: rgb(255, 207, 207);
+}
+.logo h1{
+  font-size: 40px;
+  font-weight: bolder;
+  font-style: italic;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  box-shadow: 2px 2px 10px yellow;
+  color: wheat;
+  width: 30%;
+  text-align: center;
+}
+.text{
+  margin-top: 40px;
+}
+#search-bar{
+  margin-bottom: -30%;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+
+.anchors{
+  display: flex;
+}
+.link{
+  width: 45%;
+}
+nav{
+  display: flex;
+  width: 98%;
+  background-color: palevioletred;
+  margin: 20px;
+  padding: 10px;
+}
+nav div, nav .anchors , nav button{
+  width: 100%;
+}
+nav h1:hover{
+  color: blue;
+}
+.link:hover{
+cursor: pointer;
+color: #ffffff;
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+nav button:hover{
+  color: #2e2e2e;
+}
+.text h1,.text h3{
+ 
+  margin-left: auto;
+  margin-top: 30px;
+  color: blue;
+  text-align: center;
+}
+#heading{
+  padding-top: -20%;
+
+}
+.text h3{
+
+  font-size: 40px;
+  font-style: italic;
+  font-weight: bolder;
+
+}
+.text h1{
+  font-size: 60px;
+  font-style: italic;
+  font-weight: bolder;
+}
+.text h1:hover, .text h3:hover{
+  color: red;
+}
+span input{
+  text-align: center;
+  font-size: 40px;
+  position: absolute;
+  border: 2px 2px 10px#2e2e2e;
+  border-radius: 50px;
+  width: 50%;
+  margin-left: 25%;
+}
+span{
+  display: inline-block;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+span button{
+  text-align: center;
+  font-size: 20px;
+  height: 50px;
+  border-radius: 10px;
+  width: 100px;
+  color: #2e2e2e;
+  margin-left: 1050px;
+  margin-bottom: -50px;
+}
+
+nav button{
+  width: 15%;
+  margin: auto;
+  margin-right: 20px;
+  border: 2px solid rgb(0,0,0);
+  height: 50px;
+  border-radius: 10px;
+  background-color: rgb(220, 68, 119);
+  color: #ffffff;
+  font-size: 20px;
+}
+nav .link{
+text-align: right;
+margin-left: 20px;
+margin-right: 20px;
+font-size: 20px;
+font-weight: bold;
+font-style: italic;
+font-family: sans-serif;
+}
+.about div{
+  display: inline-block;
+}
+.about .text{
+ width: 58%;
+ text-align: center;
+}
+.about h2{
+  font-size: 30px;
+  font-weight: bolder;
+  font-style: italic;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.text p{
+  font-size: 20px;
+  float: 800px;
+  text-align: justify;
+  margin: 0px 30px;
+  margin-left: 60px;
+}
+.about .image {
+  width: 28%;
+}
+
+.image img{
+  display: inline-block;
+  width: 600px;
+  border: 3px solid #2e2e2e;
+  box-shadow: 2px 2px 10px purple;
+  height: 400px;
+  margin-top: 0px;
+  margin-bottom: 50px;
+  margin-left: 100px;
+}
+.image .img1, .image .img2{
+  display: inline-block;
+  width: 600px;
+  border: 3px solid #2e2e2e;
+  box-shadow: 2px 2px 10px purple;
+  height: 250px;
+  margin-top: 25px;
+  margin-bottom: 50px;
+  margin-left: 100px;
+}
+.about .text h1:hover{
+  color: red;
+}
+.about .text h1{
+  font-size: 60px;
+  font-style: italic;
+  font-weight: bolder;
+  color: #2e2e2e;
+}
+.text b{
+  font-size: 25px;
+}
+.cards{
+  display: inline-table;
+  width: 30%;
+  margin-left: 30px;
+}
+
+ .div{
+  width: 100%;
+  display: block;
+  border: 2px solid black;
+  margin-bottom: 50px;
+  background-color: rgb(250, 186, 208);
+}
+.div:hover{
+  color: rgb(255, 0, 0);
+}
+.cards:hover{
+  box-shadow: 4px 4px 15px purple;
+}
+.card-img img{
+  width: 80%;
+  border: 2px solid purple;
+  height: 300px;
+  box-shadow: 2px 2px 15px rgb(224, 78, 200);
+  margin-top: 30px;
+  margin-left: 40px;
+}
+
+.card-text h3,.card-text p{
+  width: 90%;
+  font-size: 20px;
+  font-style: italic;
+  text-align: left;
+  margin: 20px 20px;
+}
+.cards .button{
+  border: 2px solid #2e2e2e;
+  margin-left: 20px;
+  margin-bottom: 20px;
+  color: #ffffff;
+  background-color: red;
+  width: 100px;
+  height: 40px;
+  font-size: 17px;
+  font-style: italic;
+  padding-top: 5px;
+  font-weight: 400;
+  text-align: center;
+  border-radius: 15px;
+}
+.cards .button:hover{
+  color: #2e2e2e;
+}
+.card-text h3{
+  font-size: 30px;
+  font-weight: bolder;
+}
+.card-text p{
+  text-align: left;
+}
+.card-text h4{
+  font-size: 20px;
+  font-weight: bold;
+  margin-left: 20px;
+}
+.manu h1{
+  font-size: 60px;
+  font-style: italic;
+  font-weight: bolder;
+  color: #2e2e2e;
+  text-align: center;
+  width: 90%;
+  margin-bottom: 40px;
+}
+.manu h1:hover{
+  color: red;
+}
+#contact-sec h1{
+  font-size: 60px;
+  font-style: italic;
+  font-weight: bolder;
+  color: #2e2e2e;
+  text-align: center;
+  width: 90%;
+  margin-bottom: 40px;
+}
+#contact-sec h1:hover{
+  color: red;
+}
+#icons a{
+  font-size: 40px;
+align-items: center;
+}
+
+#anch-para{
+  margin-top: -60px;
+
+}
+#icons a:hover{
+  box-shadow: 2px 2px 8px purple;
 }
