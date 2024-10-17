@@ -33,14 +33,17 @@ body{
 }
 
 
-.anchors{
+.anchors Link{
   display: flex;
+  justify-content: space-evenly;
+  width: 100%;
 }
 .link{
-  width: 45%;
+  width: 100%;
 }
 nav{
   display: flex;
+  justify-content: space-around;
   width: 98%;
   background-color: palevioletred;
   gap:20px;
@@ -48,6 +51,8 @@ nav{
 }
 nav div, nav .anchors , nav button{
   width: 100%;
+  display: flex;
+  justify-content: space-between;
 }
 nav h1:hover{
   color: blue;
