@@ -43,7 +43,7 @@ nav{
   display: flex;
   width: 98%;
   background-color: palevioletred;
-  margin: 20px;
+  gap:20px;
   padding: 10px;
 }
 nav div, nav .anchors , nav button{
@@ -275,7 +275,7 @@ font-family: sans-serif;
 #contact-sec h1:hover{
   color: red;
 }
-#icons a{
+#icons Link{
   font-size: 40px;
 align-items: center;
 }
@@ -284,6 +284,143 @@ align-items: center;
   margin-top: -60px;
 
 }
-#icons a:hover{
+#icons Link:hover{
   box-shadow: 2px 2px 8px purple;
+}
+
+/* Media Query for Small Screens (Up to 600px) */
+@media (max-width: 600px) {
+  /* Adjust the logo size for small screens */
+  .logo h1 {
+    display:none
+  }
+
+  /* Adjust nav bar */
+  nav {
+    flex-direction: column;
+    width: 90%;
+  }
+  nav .link{
+    
+    font-size: 10px;
+    margin-left: 10px;
+    width: 80%;
+    display: flexbox;
+  }
+
+  nav div, nav .anchors{
+    width: 100%; /* Make each item full width */
+    margin: 10px 0;
+  }
+  nav button{
+    display: none;
+  }
+.about .image{
+  display: none;
+}
+  /* Adjust heading and paragraph sizes */
+  .text h1 {
+    font-size: 20px !important;;
+  }
+h1{
+  font-size: 18px !important;
+}
+  .card-text h3 {
+    font-size: 15px;
+  }
+.card-text p{
+  font-size: 12px;
+}
+  /* Adjust input fields */
+  span input {
+    font-size: 15px; /* Smaller input text size */
+    width: 100%; /* Full width on small screens */
+    margin-left: 0; /* Remove left margin */
+  }
+
+  span button {
+    font-size: 14px; /* Smaller button size */
+    width: 80%; /* Adjust width */
+    margin: 10px auto; /* Center button */
+  }
+
+  /* About section adjustments */
+  .about .text {
+    width: 80%; /* Full width */
+  }
+
+  .about h1 {
+    font-size: 15px;
+    text-align: center; /* Smaller font for heading */
+  }
+.about h2{
+  font-size: 15px;
+}
+.about p b{
+  font-size: 12px;
+}
+  .about p {
+    font-size: 10px;
+    text-align: left;
+    margin: 10px; /* Adjust paragraph font size */
+  }
+
+  /* Cards layout adjustments */
+  .cards {
+    width: 70%; /* Full width cards */
+    margin:auto;
+    margin-left: 5px;
+    flex-direction: row; /* No extra margin */
+  }
+
+  /* Image adjustments */
+  .image img {
+    width: 100%; /* Full width images */
+    height: auto;
+    /* Maintain aspect ratio */
+  }
+
+  .card-img img {
+    width: 80%; /* Full width for cards */
+    height: auto; /* Maintain aspect ratio */
+    margin:10px;
+    margin-left: 20px;
+  }
+
+  .cards .button {
+    font-size: 14px; /* Smaller button */
+    width: 100px;
+  }
+
+  /* Adjust menu heading and contact section */
+  .manu h1,
+  #contact-sec h1 {
+    font-size: 24px; /* Smaller font size for headings */
+  }
+
+  /* Contact icons adjustments */
+  #icons a {
+    font-size: 20px; /* Smaller icon size */
+  }
+form label{
+  font-size: 15px !important;
+  font-weight: bold;
+  width: 90%;
+}
+form input{
+  width: 70%;
+  font-size: 15px !important;
+}
+form textarea{
+  width: 70%;
+  font-size: 15px !important;
+}
+
+form button{
+  width: 70%;
+  font-size: 12px !important;
+}
+#icons Link{
+  flex-direction: row;
+}
 }

@@ -1,7 +1,8 @@
-import Navbar from "./component/navbar";
+
 import { BsSearch } from "react-icons/bs";
 import Image from "next/image";
 import background from "../../public/images/th.jpeg"
+
 
 
 export default function Home() {
@@ -37,6 +38,7 @@ export default function Home() {
   </div>
       </div>
      </main>
+   
      </div>
  )
 }

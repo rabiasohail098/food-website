@@ -5,6 +5,7 @@ import { CiYoutube } from "react-icons/ci";
 import { CiFacebook } from "react-icons/ci";
 import { FaInstagram } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
+import Link from 'next/link';
 const ContactForm = () => {
   const [formData, setFormData] = useState({
     name: '',
@@ -69,15 +70,34 @@ const ContactForm = () => {
 
     </div>
     <div id="contact-sec">
-      <h1 className='w-[35%] text-[50px] font-extrabold mt-[80px] text-black'>Other Resourses</h1>
-      <p className='flex' id="icons">
-     <a href="https://www.linkedin.com/in/rabia-sohail-684740278/" className=' ml-[6%] text-[24px] text-center text-blue-700'><CiLinkedin /> <br /><p className='text-center text-[30px]' id="anch-para">linkedin</p></a> 
-      <a href="https://www.youtube.com/@Parniya098" className=' ml-[6%] text-[24px] text-center text-red-500'><CiYoutube /><br /><p className='text-center text-[30px]' id="anch-para">Youtube</p></a>
-     <a href="https://www.facebook.com/parniyasohail098/" className=' ml-[6%] text-[24px] text-center text-blue-500'><CiFacebook /><br /><p className='text-center text-[30px]' id="anch-para">Facebook</p></a> 
-      <a href="https://www.instagram.com/rabiasohail642/" className=' ml-[6%] text-[24px] text-center text-orange-300'><FaInstagram /><br /><p className='text-center text-[30px]' id="anch-para">Instagram</p></a>
-      <a href="https://github.com/rabiasohail098" className='ml-[6%] size-12 text-center'><FaGithub /><br /><p className='text-center text-[30px]' id="anch-para">GitHub</p></a>
-      </p>
-    </div>
+  <h1 className='w-[35%] text-[50px] font-extrabold mt-[80px] text-black'>Other Resources</h1>
+  <div className='flex flex-row' id="icons">
+    <Link href="https://www.linkedin.com/in/rabia-sohail-684740278/" className='gap-14 text-[24px] flex flex-col ml-[6%] text-center text-blue-700'>
+      <span><CiLinkedin /></span>
+      <p id="anch-para">LinkedIn</p>
+    </Link>
+
+    <Link href="https://www.youtube.com/@Parniya098" className=' gap-14 text-[24px] flex flex-col ml-[6%] text-center text-red-500'>
+      <span><CiYoutube /></span>
+      <p id="anch-para">YouTube</p>
+    </Link>
+
+    <Link href="https://www.facebook.com/parniyasohail098/" className='gap-14 text-[24px] flex flex-col ml-[6%]  text-center text-blue-500'>
+      <span><CiFacebook /></span>
+      <p id="anch-para">Facebook</p>
+    </Link>
+
+    <Link href="https://www.instagram.com/rabiasohail642/" className=' gap-14 text-[24px] flex flex-col ml-[6%] text-center text-orange-300'>
+      <span><FaInstagram /></span>
+      <p id="anch-para">Instagram</p>
+    </Link>
+
+    <Link href="https://github.com/rabiasohail098" className='gap-14 text-[24px] flex flex-col ml-[6%] text-center text-black'>
+      <span><FaGithub /></span>
+      <p id="anch-para">GitHub</p>
+    </Link>
+  </div>
+</div>
     </>
   );
 };
